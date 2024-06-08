@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+  }
+  
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 93vh;
+    margin: 0 10px 0 20px;
+  }
+  
+  .m-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .m-body h1 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+  
+  .m-body p {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+  
+  .m-body input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .m-body button,
+  .m-body a {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #qr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  a {
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  
+  .m-body button:hover,
+  .m-body a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #qr-img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header {
+      height: 10vh;
+    }
+    .cont {
+      flex-direction: column-reverse;
+      overflow: hidden;
+    }
+  
+    #qr-img {
+      margin-top: -50px;
+      width: 250px;
+      height: 250px;
+    }
+  
+    .m-body {
+      width: 90%;
+    }
+  
+    .m-body p {
+      font-size: 0.8rem;
+    }
+  
+    .m-body input,
+    .m-body button,
+    .m-body a {
+      font-size: 0.9rem;
+      width: 95%;
+    }
+  
+    @media screen and (max-height: 820px) {
+      body {
+        overflow: hidden;
+      }
+      #qr-img {
+        margin-top: -30px;
+        height: 180px;
+        width: 100%;
+        margin-bottom: -30px;
+      }
+      .m-body h1,
+      .m-body p,
+      .m-body input,
+      .m-body button,
+      .m-body a {
+        margin: 5px;
+      }
+    }
+  }
+  
